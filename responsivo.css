@@ -1,0 +1,174 @@
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+    body {
+        font-size: 16px; /* Defina o tamanho da fonte conforme necessário */
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+    #topo1,
+    #topo2 {
+        width: 100%;
+        float: none;
+    }
+    #container {
+        height: auto; /* Remover a altura fixa para permitir o conteúdo se ajustar */
+    }
+    #contatos,
+    #conversa {
+        width: 100%;
+        float: none;
+    }
+    #iconessp_open,
+    #iconessp_closed {
+        width: 100%;
+        float: none;
+    }
+    #clear {
+        display: none; /* Ocultar o clear quando a largura da tela for menor ou igual a 320px */
+    }
+    .footer {
+        width: 100%;
+        float: none;
+    }
+    #right {
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        order: 2; /* Altera a ordem de exibição para ser abaixo do #mensagemInput */
+    }
+    #mensagemInput {
+        width: 100%;
+    }
+    #sendMessageButton {
+        width: 100%;
+    }
+    #emojiPicker {
+        width: 100%;
+        left: 0;
+        max-width: 200px; /* Defina a largura máxima para o seletor de emojis */
+        max-height: 100px; /* Defina a altura máxima para o seletor de emojis */
+        overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+    }
+    #opensml {
+        width: 100%;
+    }
+    #contato {
+        width: 100%;
+    }
+    .infcont {
+        flex-direction: column; /* Alterar a direção do flex para exibir os elementos verticalmente */
+        align-items: center; /* Alinhar os itens verticalmente */
+        text-align: center;
+    }
+    #name,
+    #celf,
+    #defopc,
+    #ultm {
+        position: static; /* Remover o posicionamento relativo para permitir o layout padrão */
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+    #contatos {
+        display: none; /* Ocultar a lista de contatos por padrão em telas menores */
+    }
+    #conversa {
+        width: 100%; /* Garantir que a área de conversa ocupe toda a largura da tela */
+    }
+}
+
+/* Regras de estilo para telas de 768px */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Defina o tamanho da fonte conforme necessário */
+    }
+    #topo1,
+    #topo2 {
+        width: 30%;
+        float: left;
+    }
+    #container {
+        height: auto;
+    }
+    #contatos,
+    #conversa {
+        width: 50%;
+        float: left;
+    }
+    #iconessp_open,
+    #iconessp_closed {
+        width: 50%;
+        float: left;
+    }
+    #clear {
+        display: block;
+    }
+    footer,
+    #left,
+    #right {
+        width: auto;
+        float: none;
+    }
+    #mensagemInput {
+        width: 70%;
+    }
+    #sendMessageButton {
+        width: 15%;
+    }
+    #emojiPicker {
+        width: 50%;
+        right: 0;
+        left: auto;
+        max-width: 300px; /* Defina a largura máxima para o seletor de emojis */
+        max-height: 150px; /* Defina a altura máxima para o seletor de emojis */
+        overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+    }
+    #opensml {
+        width: auto;
+    }
+    #contato {
+        width: 100%;
+    }
+    .infcont {
+        flex-direction: row;
+        align-items: center;
+    }
+    #name,
+    #celf,
+    #defopc,
+    #ultm {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    #contatos {
+        display: block;
+    }
+    #conversa {
+        width: 50%;
+    }
+}
+
+/* Regras de estilo para telas de 834px */
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    #contatos {
+        width: 30%;
+    }
+    #conversa {
+        width: 70%;
+    }
+    #mensagemInput {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #contatos {
+        width: 20%;
+    }
+    #conversa {
+        width: 80%;
+    }
+}

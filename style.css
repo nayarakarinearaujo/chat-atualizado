@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#componetens {
+    width: 100%;
+    background-color: #F26101;
+    height: 30px;
+}
+
+#header {
+    width: 100%;
+    background-color: #fdc19bd7;
+    height: 30px;
+}
+
+#topo1 {
+    height: 30px;
+    width: 30%;
+    float: left;
+    background-color: #304269;
+    color: #ffffff;
+}
+
+#topo2 {
+    height: 30px;
+    width: 70%;
+    float: right;
+    background-color: #91BED4;
+}
+
+#container {
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+}
+
+#contatos {
+    width: 30%;
+    float: left;
+    height: 95%;
+    background-color: #bddbf5;
+}
+
+#conversa {
+    width: 70%;
+    float: right;
+    height: 95%;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+
+}
+
+.recebida {
+    background-color: #ffffff;
+    /* ou a cor desejada */
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+    /* Adiciona overflow-y para permitir rolagem vertical */
+    max-height: 500px;
+    /* Define a altura máxima */
+    border-radius: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.enviada {
+    background-color: #d1cfcf;
+    align-self: flex-end;
+    text-align: right;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+#iconessp_open {
+    display: block;
+    width: 70%;
+    float: right;
+    height: 25%;
+    background-color: #91BED4;
+}
+
+#iconessp_closed {
+    display: none;
+    width: 70%;
+    float: right;
+    height: 25%;
+    background-color: #91BED4;
+}
+
+#clear {
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    float: left;
+    background: black;
+    height: 50px;
+    color: #ffffff;
+}
+
+#left {
+    height: 50px;
+    width: 30%;
+    float: left;
+    background-color: #304269;
+}
+
+#right {
+    height: 50px;
+    width: 70%;
+    float: right;
+    background-color: #D9E8F5;
+    position: relative
+}
+
+#sendMessageButton {
+    padding: 8px 15px;
+    margin-left: 2px;
+    background-color: #F26101;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#sendMessageButton:hover {
+    background-color: #D93D04;
+
+}
+
+
+#mensagemInput {
+    padding: 10px;
+    border: 1px solid #F26101;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 5px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#emojiPicker {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    overflow-y: auto;
+    max-height: 150px;
+    /* Defina a altura máxima para o contêiner de emojis */
+}
+
+#opensml {
+    padding: 8px 15px;
+    margin-left: 2px;
+    background-color: #F26101;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+
+}
+
+#opensml:hover {
+    background-color: #D93D04;
+}
+
+
+/* contato */
+#contato {
+    background-color: #D9E8F5;
+    margin: 1px;
+}
+
+#contato:hover {
+    background-color: #a3bacede;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.infcont {
+    display: flex;
+    justify-content: left;
+}
+
+#name {
+    position: relative;
+    left: 5px;
+    top: 15px;
+}
+
+#celf {
+    display: none;
+}
+
+#defopc {
+    position: relative;
+    left: 0px;
+    top: 40px;
+}
+
+#ultm {
+    position: relative;
+    left: 70px;
+    top: -25px;
+}
+
+#ola {
+    background-color: #2f90c0;
+}
+
+/* overflow: auto; */

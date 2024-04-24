@@ -1,0 +1,75 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="componetens">[LEAD NOVO] [RENOVAO] [EX-ALUNO]</div>
+    <div id="header">
+        <div id="topo1">PODE DEIXAR EM BRANCO</div>
+        <div id="topo2">INFOR DO CONTADO</div>
+    </div>
+    <div id="container">
+        <div id="contatos">
+            <!-- essa parte vem com jquery -->
+            <div id="contato">
+                <div class="infcont" id="infcont1" onclick="contato(this.id)">
+                    <img id="foto" src="icon-client.svg">
+                    <div id="name">MARIA EDUARDA</div><span id="celf">551900000000</span>
+                    <div id="defopc">...</div>
+                </div>
+                <div id="ultm">ola tudo bem!!!</div>
+            </div>
+            <div id="contato">
+                <div class="infcont" id="infcont2" onclick="contato(this.id)">
+                    <img id="foto" src="icon-client.svg">
+                    <div id="name">EDUARDO LIMA</div><span id="celf">551900001111</span>
+                    <div id="defopc">...</div>
+                </div>
+                <div id="ultm">como você está!!!</div>
+            </div>
+        </div>
+        <div id="conversa">
+            conversa aqui somente o estilo que vai ficar
+            <div class="enviada">Olá 😀</div>
+            <div class="recebida">Tudo bem ?</div>
+        </div>
+        <div id="iconessp_closed">
+            <div></div>
+        </div>
+        <div id="clear"></div>
+        <div>
+
+        </div>
+        <footer>
+            <div id="left">DADOS 01</div>
+            <div id="right" style="position: relative;">
+
+                <!-- Adicionamos um botão para abrir o seletor de emojis -->
+                <button id="opensml" data-status="closed" data-divalt="iconessp_closed"
+                    onclick="openEmojiSelector()">😀</button>
+
+                <button id="sendMessageButton">Enviar</button>
+
+                <!-- Local do botão de envio de mensagem -->
+                <input type="text" id="mensagemInput" placeholder="Digite a mensagem...">
+
+                <!-- Adicionamos a div para o seletor de emojis -->
+                <div id="emojiPicker" style="display: none;">
+                    <!-- Seletor de emojis -->
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
